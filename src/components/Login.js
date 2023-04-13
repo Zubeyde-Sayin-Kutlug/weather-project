@@ -12,7 +12,6 @@ function Login() {
     password: "",
   });
 
-  const [data, setData] = useState([]);
   const navigate = useNavigate();
 
   // console.log(inpval);
@@ -44,7 +43,7 @@ function Login() {
     } else {
       // console.log("data added succesfully");
 
-      localStorage.setItem("zubeydes", JSON.stringify([...data, inpval]));
+      localStorage.setItem("zubeydes", JSON.stringify(inpval));
       navigate("/weather");
     }
   };

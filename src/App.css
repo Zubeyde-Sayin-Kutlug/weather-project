@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.body-image {
+  background-image: url("https://images.pexels.com/photos/4577838/pexels-photo-4577838.jpeg?auto=compress&cs=tinysrgb&w=400");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right, left, top, bottom;
+  background-attachment: fixed;
+  height: 900px;
+  width: auto;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-size: cover;
+  position: relative;
+}
+.container {
+  display: block;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  margin: 40px;
+}
+.input {
+  padding: 25px auto 0px;
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  color: black;
+  font-size: 16px;
+}
+.submit {
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  color: black;
+}
+.input:focus {
+  outline: off;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-data {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.city {
+  font-size: 30px;
+  font-weight: 200;
+}
+.date {
+  font-size: 30px;
+  font-weight: 200;
+}
+.temp {
+  font-size: 90px;
+  padding: 10;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+}
+.weather {
+  font-size: 30px;
+  font-weight: 200;
+}
+.humidity {
+  font-size: 30px;
+  font-weight: 200;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  color: black;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-message {
+  padding: 10px;
+  color: brown;
+  font-size: 16px;
 }
